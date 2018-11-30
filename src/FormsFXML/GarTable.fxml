@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mGarage" prefHeight="450.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wall_shop.GarTableController">
+   <center>
+      <TableView fx:id="tableGar" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idGar" prefWidth="75.0" text="ID" visible="false" />
+          <TableColumn fx:id="nameGar" prefWidth="100.0" text="Название" />
+            <TableColumn fx:id="cityGar" prefWidth="100.0" text="Город" />
+            <TableColumn fx:id="strGar" prefWidth="150.0" text="Улица" />
+            <TableColumn fx:id="numGar" prefWidth="75.0" text="№ Дома" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="garButtonAdd" mnemonicParsing="false" text="Добавить склад" />
+            <Button fx:id="garButtonSave" mnemonicParsing="false" text="Сохранить склад" />
+            <Button fx:id="garButtonRem" mnemonicParsing="false" text="Удалить склад" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

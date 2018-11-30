@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderGar" prefHeight="546.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wall_shop.GaragesTableController">
+   <center>
+      <TableView fx:id="tableInfGar" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idGar" prefWidth="75.0" text="ID" visible="false" />
+            <TableColumn fx:id="nameGar" prefWidth="100.0" text="Склад" />
+            <TableColumn fx:id="providerGar" prefWidth="100.0" text="Поставщик" />
+            <TableColumn fx:id="wallGar" prefWidth="100.0" text="Обои" />
+            <TableColumn fx:id="numGar" prefWidth="105.5999755859375" text="Кол-во рулонов" />
+            <TableColumn fx:id="lenthGar" prefWidth="75.0" text="Длинна" />
+            <TableColumn fx:id="widthGar" prefWidth="75.0" text="Ширина" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="infButtAdd" mnemonicParsing="false" style="-fx-graphic: url('/ICONS/plus.ico');" text="Добавить запись" />
+            <Button fx:id="infButtSave" mnemonicParsing="false" text="Сохранить запись" />
+            <Button fx:id="infButtRem" mnemonicParsing="false" text="Удалить запись" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>
